@@ -94,7 +94,7 @@ Author: <span class="badge">' + author + ' </span></b>\n\
 
     // demo request to load blogspot articles on page
     var pageOnLoad = function() {
-        $("#url").val('http://the-sarkarinaukri.blogspot.in');
+        $("#url").val('http://sarkarinaukri-recruitment.blogspot.com');
         $("#limit").val(10);
         $("#sub").trigger('click');
     }
