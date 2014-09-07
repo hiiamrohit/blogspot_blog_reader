@@ -68,7 +68,7 @@ $(function() {
         };
 
         var errorRes = function(e) {
-            alertModal("Error to fetch data, ( " + e.responseText + " )");
+            alertModal("Error to fetch data, ( " + e.statusText + " )");
             loadingHide();
             resetArticleBage();
         };
@@ -76,7 +76,7 @@ $(function() {
         var createHtml = function(sn, title, description, pubdate, author) {
             var html = '<li class="list-group-item">\n\
             <b>Article No: <span class="badge">' + (sn + 1) + '</span> \n\
-Publishing date: <span class="badge">' + pubdate + ' </span> \n\
+Publication  date: <span class="badge">' + pubdate + ' </span> \n\
 Author: <span class="badge">' + author + ' </span></b>\n\
 <h4>' + title + '</h4><p>' + description + '</p></li>';
             return html;
@@ -88,7 +88,8 @@ Author: <span class="badge">' + author + ' </span></b>\n\
             data: $("#fdata").serialize(),
             dataType: 'json',
             success: successRes,
-            error: errorRes
+            error: errorRes,
+            timeout: 60000
         });
     };
 
