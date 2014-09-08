@@ -7,10 +7,11 @@
  * Description: Read your blogspot articles and display on your websites.
  */
 class blogReader {
-
+    
     public $url;
     public $limit;
-    private static $rssUrl = '/feeds/posts/default?alt=rss';
+    public $maxLimit =999; 
+    private static $rssUrl = '/feeds/posts/default?alt=rss&max-results='.$maxLimit;
     
     // set variable at the time of object initialization 
     function __construct($url, $limit) {
