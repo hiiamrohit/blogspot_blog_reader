@@ -11,7 +11,7 @@ class blogReader {
     public $url;
     public $limit;
     public $maxLimit =999; 
-    private static $rssUrl = '/feeds/posts/default?alt=rss&max-results='.$maxLimit;
+    private static $rssUrl = '/feeds/posts/default?alt=rss';
     
     // set variable at the time of object initialization 
     function __construct($url, $limit) {
@@ -21,7 +21,7 @@ class blogReader {
     
     // create blogspot Rss url
     public function rssUrl() {
-        $rssUrl = $this->url . self::$rssUrl;
+        $rssUrl = $this->url . self::$rssUrl."&max-results=".$this->maxLimit ;
         return $rssUrl;
     }
     

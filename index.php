@@ -7,7 +7,7 @@
  * Description: Read your blogspot articles and display on your websites.
  */
 if (isset($_POST['req'])) {
-    error_reporting(0);
+    error_reporting(E_ALL);
     ini_set("display_errors", 1);
 
     function __autoload($classname) {
