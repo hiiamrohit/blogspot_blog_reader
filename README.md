@@ -7,4 +7,4 @@ Blogspot Blog reader
 * Technology used: ``` PHP, Jquery, Bootstrap```
 
 For demo follow this link
-http://phpajax.url.ph/blog_reader/ 
+http://iamrohit.in/example/blogspot_blog_reader/
