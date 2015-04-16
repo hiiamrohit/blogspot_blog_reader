@@ -1,6 +1,7 @@
 <?php
 /*
- * Author: Rohit Patel
+ * Author: Rohit Kumar
+ * Website: iamrohit.in
  * Version: 0.0.1
  * Date: 07-09-2014
  * App Name: Blogspot blog reader
